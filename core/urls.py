@@ -10,4 +10,5 @@ router.register('livros', LivroViewSet, basename='Livros')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(router.urls)),
+    path('authentication/', PseudoAuthentication.as_view()),
 ]
